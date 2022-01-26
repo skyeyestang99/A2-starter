@@ -55,8 +55,7 @@ int main(int argc, char* argv[]) {
 int cin;
 int i = 0;
 int count;
-int num;
-sscanf (argv[2],"%d",&num);
+int num = atoi(argv[2]);
 while((cin = fgetc(fin))!= EOF){
   if(cin == ' ' || cin =='\n' ||'\0'){
     for(count=strlen(word)-1;count>=0;count--){
