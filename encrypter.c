@@ -61,7 +61,7 @@ sscanf (argv[2],"%d",&num);
 while((cin = fgetc(fin))!= EOF){
   if(cin == ' ' || cin =='\n' ||'\0'){
     for(count=strlen(word)-1;count>=0;count--){
-      printf("%c",rotate(word[count],num)); 
+      printf("%c",word[count]); 
     }
     if(cin==' '){
       printf(" ");
@@ -73,7 +73,7 @@ while((cin = fgetc(fin))!= EOF){
     i = 0;
     continue;
   }
-  word[i] = cin;
+  word[i] = rotate(cin,num);
   i++;
 }
   // clean up gracefully
