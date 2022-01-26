@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+//edge case z
 #define MAX_LEN 256 // maximum length of a single word
 char rotate(char c, int n){
     //rotate only alphate
@@ -38,13 +38,12 @@ char rotate(char c, int n){
     }
 }
 int main(int argc, char* argv[]) {
-  char rotate(char,int);
   if(argc != 3){
     fprintf(stderr, "wrong number of arguments\n");
     return 1;
   }
   char word[MAX_LEN];
-  memset(word,'\0',MAX_LEN);
+  //memset(word,'\0',MAX_LEN);
 
   FILE* fin = fopen(argv[1],"r");
 
