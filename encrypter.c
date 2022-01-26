@@ -38,6 +38,7 @@ char rotate(char c, int n){
     }
 }
 int main(int argc, char* argv[]) {
+  char rotate(char,int);
   if(argc != 3){
     fprintf(stderr, "wrong number of arguments\n");
     return 1;
