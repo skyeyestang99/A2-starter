@@ -75,6 +75,9 @@ while((cin = fgetc(fin))!= EOF){
   word[i] = rotate(cin,num);
   i++;
 }
+for(count=strlen(word)-1;count>=0;count--){
+  printf("%c",word[count]); 
+}
   // clean up gracefully
   fclose(fin);
 
