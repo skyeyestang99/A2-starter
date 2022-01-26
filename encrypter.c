@@ -9,8 +9,8 @@ char rotate(char c, int n){
     if(isalpha(c)){
       //rotate lowercase
       if(c>=97){
-        char insideLower= 'a'+(c-'a'+n);
-        char outsideLower= 'a'+(c-'a'+n)-26;
+        char insideLower= 'a'+(c-'a'+n)%26;
+        char outsideLower= 'a'+(c-'a'+n)%26-26;
         //inside the alphate
         if(isalpha(insideLower)){
             return insideLower;
@@ -22,8 +22,8 @@ char rotate(char c, int n){
       }
       //rotate uppercase
       else{
-        char insideUpper= 'A'+(c-'A'+n);
-        char outsideUpper= 'A'+(c-'A'+n)-26;
+        char insideUpper= 'A'+(c-'A'+n)%26;
+        char outsideUpper= 'A'+(c-'A'+n)%26-26;
         if(isalpha(insideUpper)){
           return insideUpper;
         }
