@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-//edge case z
+
 #define MAX_LEN 256 // maximum length of a single word
+
 char rotate(char c, int n){
     //rotate only alphate
     if(isalpha(c)){
@@ -33,9 +34,7 @@ char rotate(char c, int n){
       }
     }
     //non-alphateic then return itself
-    else{
-       return c;
-    }
+    return c;
 }
 int main(int argc, char* argv[]) {
   if(argc != 3){
