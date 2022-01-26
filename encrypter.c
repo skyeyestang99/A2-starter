@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
     return 1;
   }
   char word[MAX_LEN];
-  //memset(word,'\0',MAX_LEN);
+  memset(word,'\0',MAX_LEN);
 
   FILE* fin = fopen(argv[1],"r");
 
